@@ -1,4 +1,4 @@
-%% sampleFunction
+%% sampleFunctionUpdated
 % 
 % <<sample.png>>
 % 
