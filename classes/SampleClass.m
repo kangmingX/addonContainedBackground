@@ -1,4 +1,4 @@
-classdef SampleClass
+classdef SampleClassUpdated
     %SampleClass Set and then get the same value
    
     properties
