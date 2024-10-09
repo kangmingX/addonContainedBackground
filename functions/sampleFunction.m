@@ -1,4 +1,4 @@
-function [Y] = sampleFunction(X)
+function [Y] = sampleFunctionUpdated(X)
 %sampleFunction Identity function.
 %   Y = sampleFunction(X) Returns X.
 %
