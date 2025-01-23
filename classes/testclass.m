@@ -1,7 +1,7 @@
 classdef testclass
     %UNTITLED3 Summary of this class goes here
     %   Detailed explanation goes here updated ?? updated 
-
+    % updated comment
     properties
         Property1
     end
