@@ -4,7 +4,7 @@
 % 
 % Using |sampleFunction|:
 %
-sampleFunction(42)
+sampleFunction(41)
 sampleFunction(43)
 %% With other functions
 %
