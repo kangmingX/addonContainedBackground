@@ -1,12 +1,13 @@
 # MathWorks OPC Text Package
 Model {
-  Version  24.1
-  Description "Simulink model saved in R2024a"
+  Version  24.2
+  Description "Simulink model saved in R2024b"
 }
-__MWOPC_PACKAGE_BEGIN__ R2024a
+__MWOPC_PACKAGE_BEGIN__ R2024b
 __MWOPC_PART_BEGIN__ /[Content_Types].xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default ContentType="application/vnd.mathworks.simulink.graphicalInterface+json" Extension="json"/>
   <Default ContentType="application/vnd.openxmlformats-package.relationships+xml" Extension="rels"/>
   <Default ContentType="application/vnd.mathworks.simulink.mdl+xml" Extension="xml"/>
   <Override ContentType="application/vnd.openxmlformats-package.core-properties+xml" PartName="/metadata/coreProperties.xml"/>
@@ -15,7 +16,6 @@ __MWOPC_PART_BEGIN__ /[Content_Types].xml
   <Override ContentType="application/vnd.mathworks.package.corePropertiesReleaseInfo+xml" PartName="/metadata/mwcorePropertiesReleaseInfo.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.configSet+xml" PartName="/simulink/configSet0.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.configSetInfo+xml" PartName="/simulink/configSetInfo.xml"/>
-  <Override ContentType="application/vnd.mathworks.simulink.graphicalInterface+xml" PartName="/simulink/graphicalInterface.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.pluginParameters+xml" PartName="/simulink/plugins/SimscapeModelParametersPlugin.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
@@ -44,9 +44,9 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dc:creator>rsouza</dc:creator>
   <dc:description>A sample Simulink model</dc:description>
   <cp:lastModifiedBy>kxu</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-10-09T14:54:04Z</dcterms:modified>
-  <cp:revision>13.0</cp:revision>
-  <cp:version>R2024a</cp:version>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-01-23T15:05:53Z</dcterms:modified>
+  <cp:revision>14.1</cp:revision>
+  <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
@@ -54,7 +54,7 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2012/coreProperties">
   <contentType>application/vnd.mathworks.simulink.model</contentType>
   <contentTypeFriendlyName>Simulink Model</contentTypeFriendlyName>
-  <matlabRelease>R2024a</matlabRelease>
+  <matlabRelease>R2024b</matlabRelease>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
@@ -65,13 +65,13 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Version information for MathWorks R2024a Release -->
+<!-- Version information for MathWorks R2024b Release -->
 <MathWorks_version_info>
-  <version>24.1.0.2461801</version>
-  <release>R2024a</release>
-  <description>Prerelease Update 1</description>
-  <date>Nov 30 2023</date>
-  <checksum>519612611</checksum>
+  <version>24.2.0.2773142</version>
+  <release>R2024b</release>
+  <description>Update 2</description>
+  <date>Oct 22 2024</date>
+  <checksum>227631694</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -80,7 +80,7 @@ __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
   <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
   <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
   <Relationship Id="SimscapeModelParametersPlugin" Target="plugins/SimscapeModelParametersPlugin.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
-  <Relationship Id="graphicalInterface" Target="graphicalInterface.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
+  <Relationship Id="graphicalInterface" Target="graphicalInterface.json" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
   <Relationship Id="system_root" Target="systems/system_root.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
   <Relationship Id="windowsInfo" Target="windowsInfo.xml" Type="http://schemas.mathworks.com/simulinkModel/2019/relationships/windowsInfo"/>
 </Relationships>
@@ -112,7 +112,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.0&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:14.1&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="MultithreadedSim">on</P>
@@ -148,11 +148,11 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConfigSet>
-  <Object Version="24.0.0" ClassName="Simulink.ConfigSet">
+  <Object Version="24.1.0" ClassName="Simulink.ConfigSet">
     <P Name="DisabledProps" Class="double">[]</P>
     <P Name="Description"/>
     <Array PropName="Components" Type="Handle" Dimension="1*9">
-      <Object ObjectID="2" Version="24.0.0" ClassName="Simulink.SolverCC">
+      <Object ObjectID="2" Version="24.1.0" ClassName="Simulink.SolverCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -197,7 +197,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="MaxZcPerStep">2</P>
         <P Name="MaxZcBracketingIterations">10</P>
       </Object>
-      <Object ObjectID="3" Version="24.0.0" ClassName="Simulink.DataIOCC">
+      <Object ObjectID="3" Version="24.1.0" ClassName="Simulink.DataIOCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -238,7 +238,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="LoggingFileName">out.mat</P>
         <P Name="LoggingIntervals">[-inf, inf]</P>
       </Object>
-      <Object ObjectID="4" Version="24.0.0" ClassName="Simulink.OptimizationCC">
+      <Object ObjectID="4" Version="24.1.0" ClassName="Simulink.OptimizationCC">
         <Array PropName="DisabledProps" Type="Cell" Dimension="1*10">
           <Cell Class="char">BooleansAsBitfields</Cell>
           <Cell Class="char">PassReuseOutputArgsAs</Cell>
@@ -313,7 +313,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DenormalBehavior">GradualUnderflow</P>
         <P Name="EfficientTunableParamExpr">off</P>
       </Object>
-      <Object ObjectID="5" Version="24.0.0" ClassName="Simulink.DebuggingCC">
+      <Object ObjectID="5" Version="24.1.0" ClassName="Simulink.DebuggingCC">
         <Array PropName="DisabledProps" Type="Cell" Dimension="1*1">
           <Cell Class="char">UseOnlyExistingSharedCode</Cell>
         </Array>
@@ -434,7 +434,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="VariantConfigNotUsedByTopModel">warning</P>
         <P Name="ParamWriterValidationControl">UseLocalSettings</P>
       </Object>
-      <Object ObjectID="6" Version="24.0.0" ClassName="Simulink.HardwareCC">
+      <Object ObjectID="6" Version="24.1.0" ClassName="Simulink.HardwareCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -482,7 +482,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="UseSimulinkCoderFeatures">on</P>
         <P Name="HardwareBoardFeatureSet">EmbeddedCoderHSP</P>
       </Object>
-      <Object ObjectID="7" Version="24.0.0" ClassName="Simulink.ModelReferenceCC">
+      <Object ObjectID="7" Version="24.1.0" ClassName="Simulink.ModelReferenceCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -501,7 +501,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SupportModelReferenceSimTargetCustomCode">off</P>
         <P Name="UseModelRefSolver">off</P>
       </Object>
-      <Object ObjectID="8" Version="24.0.0" ClassName="Simulink.SFSimCC">
+      <Object ObjectID="8" Version="24.1.0" ClassName="Simulink.SFSimCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -530,6 +530,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="EnableImplicitExpansion">on</P>
         <P Name="MATLABDynamicMemAlloc">on</P>
         <P Name="MATLABDynamicMemAllocThreshold">65536</P>
+        <P Name="UsePrecompiledLibraries">Prefer</P>
         <P Name="LegacyBehaviorForPersistentVarInContinuousTime">off</P>
         <P Name="CustomCodeFunctionArrayLayout" Class="double">[]</P>
         <P Name="DefaultCustomCodeFunctionArrayLayout">NotSpecified</P>
@@ -548,7 +549,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SimDLTargetLibrary">mkl-dnn</P>
         <P Name="SimDLAutoTuning">on</P>
       </Object>
-      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="24.0.0" ClassName="Simulink.RTWCC">
+      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="24.1.0" ClassName="Simulink.RTWCC">
         <Array PropName="DisabledProps" Type="Cell" Dimension="1*18">
           <Cell Class="char">IncludeHyperlinkInReport</Cell>
           <Cell Class="char">GenerateTraceInfo</Cell>
@@ -663,7 +664,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="LargeConstantGeneration">KeepInSourceFiles</P>
         <P Name="LargeConstantThreshold">131072</P>
         <Array PropName="Components" Type="Handle" Dimension="1*2">
-          <Object ObjectID="10" Version="24.0.0" ClassName="Simulink.CodeAppCC">
+          <Object ObjectID="10" Version="24.1.0" ClassName="Simulink.CodeAppCC">
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*29">
               <Cell Class="char">IgnoreCustomStorageClasses</Cell>
               <Cell Class="char">IgnoreTestpoints</Cell>
@@ -734,6 +735,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
             <P Name="SignalNamingRule">None</P>
             <P Name="SignalNamingFcn"/>
             <P Name="InsertBlockDesc">off</P>
+            <P Name="AnnotationsInComments">off</P>
             <P Name="InsertPolySpaceComments">off</P>
             <P Name="SimulinkBlockComments">on</P>
             <P Name="BlockCommentType">BlockPathComment</P>
@@ -748,7 +750,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
             <P Name="ReservedNameArray" Class="double">[]</P>
             <P Name="EnumMemberNameClash">error</P>
           </Object>
-          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="24.0.0" ClassName="Simulink.GRTTargetCC">
+          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="24.1.0" ClassName="Simulink.GRTTargetCC">
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*19">
               <Cell Class="char">IncludeMdlTerminateFcn</Cell>
               <Cell Class="char">SuppressErrorStatus</Cell>
@@ -858,7 +860,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
           </Object>
         </Array>
       </Object>
-      <Object ObjectID="12" Version="24.0.0" ClassName="SlCovCC.ConfigComp">
+      <Object ObjectID="12" Version="24.1.0" ClassName="SlCovCC.ConfigComp">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description">Simulink Coverage Configuration Component</P>
         <P Name="Components" Class="double">[]</P>
@@ -910,30 +912,14 @@ __MWOPC_PART_BEGIN__ /simulink/configSetInfo.xml
   <ConfigSet PartName="/simulink/configSet0.xml" Active="true">Configuration</ConfigSet>
 </ConfigSetInfo>
 
-__MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
-<?xml version="1.0" encoding="utf-8"?>
-<GraphicalInterface>
-  <P Name="NumRootInports">0</P>
-  <P Name="NumRootOutports">0</P>
-  <P Name="ParameterArgumentNames"/>
-  <P Name="NumModelReferences">0</P>
-  <P Name="NumTestPointedSignals">0</P>
-  <P Name="NumProvidedFunctions">0</P>
-  <P Name="NumRequiredFunctions">0</P>
-  <P Name="NumResetEvents">0</P>
-  <P Name="HasInitializeEvent">0</P>
-  <P Name="HasTerminateEvent">0</P>
-  <P Name="NumDataStoreReferences">0</P>
-  <P Name="PreCompExecutionDomainType">Unset</P>
-  <P Name="UseModelRefSolver">0</P>
-  <P Name="SolverName">VariableStepAuto</P>
-  <P Name="IsExportFunctionModel">0</P>
-  <P Name="SimulinkSubDomainType">Simulink</P>
-  <P Name="NumParameterArguments">0</P>
-  <P Name="NumExternalFileReferences">0</P>
-  <P Name="OrderedModelArguments">1</P>
-</GraphicalInterface>
-
+__MWOPC_PART_BEGIN__ /simulink/graphicalInterface.json
+{
+    "GraphicalInterface":{
+        "PreCompExecutionDomainType":"Unset",
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"VariableStepAuto"
+    }
+}
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
@@ -949,7 +935,7 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2023a_202209151115">
+<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2024b_202402211119">
   <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="12ef3ccd-9b14-4cbf-a685-995c0eadb65d">
     <defaultEventBehavior type="sltp.mm.core.EventBehavior" uuid="6814522d-eb36-4994-a935-de60e0c1cf9f"/>
     <editorState type="sltp.mm.core.EditorState" uuid="403217c1-2393-4dd6-8bf1-4b515f5169b0">
@@ -966,7 +952,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 </sltp_graph>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2023b_202303220000">
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2024b_202402211148">
   <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="5456ba36-124b-4cb0-9ce4-1bdccda97630">
     <syntaxElement type="sltp.mm.syntax.Graph" uuid="de1ddf70-b5d6-4697-b0f3-aeb29ffcc562"/>
     <title>Default</title>
@@ -983,14 +969,14 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[93, 84, 1706, 1218]</P>
+  <P Name="Location">[93, 84, 1706, 1177]</P>
   <P Name="Open">on</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">1</P>
   <Block BlockType="Constant" Name="Constant" SID="1">
     <P Name="Position">[940, 475, 970, 505]</P>
     <P Name="ZOrder">1</P>
-    <P Name="Value">15</P>
+    <P Name="Value">11</P>
   </Block>
 </System>
 
@@ -1000,14 +986,14 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
   <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
     <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
       <P Name="IsActive" Class="logical">1</P>
-      <P Name="Location" Class="double">[93.0, 84.0, 1613.0, 1134.0]</P>
+      <P Name="Location" Class="double">[93.0, 84.0, 1613.0, 1093.0]</P>
       <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
         <P Name="Visible" Class="logical">1</P>
         <P Name="DockPosition" Class="char">Left</P>
         <P Name="Width" Class="int32">50</P>
         <P Name="Height" Class="int32">50</P>
         <P Name="Filter" Class="int32">9</P>
-        <P Name="Minimized" Class="char">Off</P>
+        <P Name="Minimized" Class="char">Unset</P>
       </Object>
       <Object PropName="ExplorerBarInfo" ObjectID="4" ClassName="Simulink.ExplorerBarInfo">
         <P Name="Visible" Class="logical">1</P>
@@ -1017,10 +1003,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <P Name="IsTabbed" Class="logical">1</P>
         <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
         <P Name="LoadSaveID" Class="char">0</P>
-        <P Name="Extents" Class="double">[1380.0, 898.0]</P>
+        <P Name="Extents" Class="double">[2163.0, 1302.0]</P>
         <P Name="ZoomFactor" Class="double">1.0</P>
-        <P Name="Offset" Class="double">[0.0, 0.0]</P>
-        <P Name="SceneRectInView" Class="double">[0.0, 0.0, 1380.0, 898.0]</P>
+        <P Name="Offset" Class="double">[236.5, 56.5]</P>
+        <P Name="SceneRectInView" Class="double">[236.5, 56.5, 1442.0, 868.0]</P>
       </Object>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
         <Object ObjectID="6">
@@ -1031,8 +1017,8 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="UserData" Class="char"/>
           <P Name="Floating" Class="logical">0</P>
           <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">640</P>
-          <P Name="Height" Class="int32">480</P>
+          <P Name="Width" Class="int32">426</P>
+          <P Name="Height" Class="int32">320</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
         <Object ObjectID="7">
@@ -1044,12 +1030,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
 </P>
           <P Name="Floating" Class="logical">0</P>
           <P Name="DockPosition" Class="char">Left</P>
-          <P Name="Width" Class="int32">640</P>
-          <P Name="Height" Class="int32">480</P>
+          <P Name="Width" Class="int32">426</P>
+          <P Name="Height" Class="int32">320</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADv/wCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAeQAAA78AAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAJ5AP///wAABYoAAAO/AAAAAQAAAAIAAAABAAAAAvwAAAABAAAAAgAAAAA=</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAADBAAAFZPwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAtQAABWQAAACTAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAxwD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAoAA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAOzAP///wAACKsAAAVkAAAAAQAAAAIAAAABAAAAAvwAAAABAAAAAgAAAAA=</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">0a25fd15-711f-44db-a964-2b9ee24d2c62</P>
     </Object>
