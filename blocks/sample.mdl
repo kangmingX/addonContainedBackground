@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dc:creator>rsouza</dc:creator>
   <dc:description>A sample Simulink model</dc:description>
   <cp:lastModifiedBy>kxu</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-01-23T15:05:53Z</dcterms:modified>
-  <cp:revision>14.1</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-01-23T20:23:57Z</dcterms:modified>
+  <cp:revision>14.2</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -112,7 +112,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:14.1&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:14.2&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="MultithreadedSim">on</P>
@@ -976,7 +976,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <Block BlockType="Constant" Name="Constant" SID="1">
     <P Name="Position">[940, 475, 970, 505]</P>
     <P Name="ZOrder">1</P>
-    <P Name="Value">11</P>
+    <P Name="Value">99</P>
   </Block>
 </System>
 
